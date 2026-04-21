@@ -298,6 +298,30 @@ const Etchmiadzin = () => {
         </div>
       </section>
 
+      {/* Housing Link */}
+      <section className="relative z-10 py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <Link to="/housing/vagharshapat" className="group block rounded-3xl bg-white/5 ring-1 ring-white/10 hover:ring-white/30 transition-all duration-300 p-10 md:p-14">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex items-center gap-5">
+                <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="BedDouble" size={28} />
+                </div>
+                <div>
+                  <p className="text-white/50 text-sm mb-1">Вагаршапат</p>
+                  <h3 className="text-2xl md:text-3xl font-semibold">Где остановиться и поесть</h3>
+                  <p className="text-white/60 mt-2">Жильё и рестораны рядом с Эчмиадзином</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors flex-shrink-0">
+                <span className="text-sm font-medium">Смотреть</span>
+                <Icon name="ArrowRight" size={18} />
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
