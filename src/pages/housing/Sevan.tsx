@@ -38,7 +38,7 @@ const SevanHousing = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[1, 2, 3, 4].map((i) => (
               <div key={i} className="rounded-2xl bg-white/5 ring-1 ring-white/10 p-6 space-y-3">
-                <div className="h-5 bg-white/10 rounded-full w-3/4 animate-pulse" />
+                <div className="ллллe" />
                 <div className="h-4 bg-white/10 rounded-full w-full animate-pulse" />
                 <div className="h-4 bg-white/10 rounded-full w-2/3 animate-pulse" />
                 <div className="h-4 bg-white/10 rounded-full w-1/2 animate-pulse" />
