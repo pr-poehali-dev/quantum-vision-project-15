@@ -35,7 +35,7 @@ const Sevan = () => {
     {
       question: "Сколько времени занимает поездка?",
       answer:
-        "Севан находится в 60 км от Еревана, примерно час езды. Мы рекомендуем полноценный день — осмотр монастыря, прогулка по берегу, обед с севанским сигом и горным воздухом. При желании можно совместить с посещением Дилижана.",
+        "Севан находится в 60 км от Еревана, примерно час езды. Рекомендуем полноценный день — осмотр монастыря, прогулка по берегу, обед с севанским сигом и горным воздухом. При желании можно совместить с посещением Дилижана.",
     },
   ]
 
@@ -60,9 +60,6 @@ const Sevan = () => {
             <Icon name="Compass" size={20} />
             <span className="font-medium">Армения Тур</span>
           </div>
-          <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Забронировать</Button>
-          </div>
         </nav>
 
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
@@ -75,10 +72,10 @@ const Sevan = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Забронировать экскурсию
+              Читать гид
             </Button>
             <Button size="lg" variant="outline" className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg">
-              Смотреть маршрут
+              Как добраться
             </Button>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
@@ -116,8 +113,8 @@ const Sevan = () => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="Wind" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Горный воздух</h3>
-              <p className="text-white/80 leading-relaxed">Чистейший воздух и умиротворяющая атмосфера высокогорья.</p>
+              <h3 className="text-xl font-semibold mb-4">Общественный транспорт</h3>
+              <p className="text-white/80 leading-relaxed">Из Еревана ходят маршрутки до Севана (~300 драм, 1 час). Можно арендовать авто.</p>
             </div>
           </div>
         </div>
@@ -162,7 +159,7 @@ const Sevan = () => {
             </div>
             <div className="text-center">
               <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold">
-                Забронировать экскурсию
+                Открыть на карте
               </Button>
             </div>
           </div>
@@ -217,13 +214,13 @@ const Sevan = () => {
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">Сообщение</label>
-                    <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваши вопросы о туре на Севан..." />
+                    <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваши вопросы о посещении Севана или ваш опыт..." />
                   </div>
                   <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">Отправить сообщение</Button>
                 </form>
               </div>
               <div className="space-y-8">
-                <p className="text-xl text-white/90 leading-relaxed text-pretty">По вопросам экскурсий на Севан, групповых туров или индивидуальных программ — свяжитесь с нами.</p>
+                <p className="text-xl text-white/90 leading-relaxed text-pretty">Есть вопрос о месте или хотите поделиться своим опытом посещения? Напишите нам — ответим.</p>
                 <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center text-2xl">🏔️</div>

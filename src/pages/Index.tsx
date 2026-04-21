@@ -83,15 +83,12 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Забронировать</Button>
-          </div>
         </nav>
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
           <div className="mb-6 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <span className="text-sm font-medium">Туры по Армении — священные места и живая история</span>
+            <span className="text-sm font-medium">Путеводитель по Армении — священные места и живая история</span>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Откройте душу Армении.</h1>
@@ -102,14 +99,14 @@ const Index = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Выбрать направление
+              Выбрать место
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg"
             >
-              Узнать о турах
+              Как добраться
             </Button>
           </div>
 
@@ -128,32 +125,32 @@ const Index = () => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="Sparkles" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Местные гиды</h3>
-              <p className="text-white/80 leading-relaxed">Историки и знатоки армянской культуры раскрывают смысл каждого места.</p>
+              <h3 className="text-xl font-semibold mb-4">Живая история</h3>
+              <p className="text-white/80 leading-relaxed">Подробные рассказы о каждом месте — зачем туда ехать и что искать внутри.</p>
             </div>
 
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="ShieldCheck" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Проверенный маршрут</h3>
-              <p className="text-white/80 leading-relaxed">Все логистические детали продуманы — вы просто наслаждаетесь путешествием.</p>
+              <h3 className="text-xl font-semibold mb-4">Практические советы</h3>
+              <p className="text-white/80 leading-relaxed">Как добраться, что взять с собой, когда лучше приехать и чего ожидать.</p>
             </div>
 
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="Wallet" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Всё включено</h3>
-              <p className="text-white/80 leading-relaxed">Трансфер, гид и входные билеты — никаких скрытых платежей.</p>
+              <h3 className="text-xl font-semibold mb-4">Самостоятельно</h3>
+              <p className="text-white/80 leading-relaxed">Вся информация для поездки без агентств — на своём авто или общественном транспорте.</p>
             </div>
 
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="Leaf" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Малые группы</h3>
-              <p className="text-white/80 leading-relaxed">Не более 10 человек в группе для комфортного и глубокого знакомства с местами.</p>
+              <h3 className="text-xl font-semibold mb-4">Без лишнего</h3>
+              <p className="text-white/80 leading-relaxed">Только суть — история, маршрут и атмосфера. Без рекламы и коммерческих советов.</p>
             </div>
           </div>
         </div>
@@ -164,7 +161,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Наши направления</h2>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Направления</h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
                 Пять уникальных мест — пять страниц армянской истории. Выберите маршрут или откройте их все.
               </p>
@@ -206,10 +203,10 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-6">
                   <Icon name="Map" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Полный тур по Армении</h3>
-                <p className="text-white/80 leading-relaxed mb-8">Хотите посетить все пять мест? Составим индивидуальный маршрут под ваш график.</p>
+                <h3 className="text-2xl font-bold mb-4">Маршрут на неделю</h3>
+                <p className="text-white/80 leading-relaxed mb-8">Хотите охватить все пять мест? В разделе «Маршруты» — готовый план для самостоятельной поездки.</p>
                 <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8">
-                  Написать нам
+                  Читать маршрут
                 </Button>
               </div>
             </div>

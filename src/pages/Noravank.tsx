@@ -25,7 +25,7 @@ const Noravank = () => {
     {
       question: "Как добраться до Нораванка?",
       answer:
-        "Монастырь находится в 122 км от Еревана, примерно 2 часа езды через Вайоц Дзор. Мы организуем удобный трансфер с остановками у виноградников и дегустацией местных вин по пути.",
+        "Прямых маршруток нет — лучше арендовать авто или доехать с попутной машиной из Еревана (~2 часа). По пути удобно остановиться у виноградников.",
     },
     {
       question: "Когда лучше всего посещать?",
@@ -60,9 +60,6 @@ const Noravank = () => {
             <Icon name="Compass" size={20} />
             <span className="font-medium">Армения Тур</span>
           </div>
-          <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Забронировать</Button>
-          </div>
         </nav>
 
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
@@ -75,10 +72,10 @@ const Noravank = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Забронировать экскурсию
+              Читать гид
             </Button>
             <Button size="lg" variant="outline" className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg">
-              Смотреть маршрут
+              Как добраться
             </Button>
           </div>
           <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
@@ -109,8 +106,8 @@ const Noravank = () => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="Wallet" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Все включено</h3>
-              <p className="text-white/80 leading-relaxed">Трансфер, гид и дегустация местных вин Арени по пути.</p>
+              <h3 className="text-xl font-semibold mb-4">Вход свободный</h3>
+              <p className="text-white/80 leading-relaxed">Посещение монастырского комплекса бесплатное.</p>
             </div>
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
@@ -162,7 +159,7 @@ const Noravank = () => {
             </div>
             <div className="text-center">
               <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold">
-                Забронировать экскурсию
+                Открыть на карте
               </Button>
             </div>
           </div>
@@ -217,13 +214,13 @@ const Noravank = () => {
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">Сообщение</label>
-                    <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваши вопросы о туре в Нораванк..." />
+                    <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваши вопросы о посещении Нораванка или ваш опыт..." />
                   </div>
                   <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">Отправить сообщение</Button>
                 </form>
               </div>
               <div className="space-y-8">
-                <p className="text-xl text-white/90 leading-relaxed text-pretty">По вопросам экскурсий в Нораванк, групповых туров или индивидуальных программ — свяжитесь с нами. Отвечаем в течение одного рабочего дня.</p>
+                <p className="text-xl text-white/90 leading-relaxed text-pretty">Есть вопрос о месте или хотите поделиться своим опытом посещения? Напишите нам — ответим.</p>
                 <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center text-2xl">🏔️</div>

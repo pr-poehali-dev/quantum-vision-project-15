@@ -30,12 +30,12 @@ const Etchmiadzin = () => {
     {
       question: "Как добраться до Эчмиадзина?",
       answer:
-        "Эчмиадзин расположен в 20 км от Еревана. Туда можно доехать на маршрутке от площади Адмирала Исакова (около 30 минут), на такси или в составе организованной экскурсии. Мы организуем трансфер из любой точки Еревана.",
+        "Эчмиадзин расположен в 20 км от Еревана. Туда можно доехать на маршрутке от площади Адмирала Исакова (около 30 минут), на такси или в составе организованной экскурсии.",
     },
     {
-      question: "Что включено в тур?",
+      question: "Сколько стоит посещение?",
       answer:
-        "В стоимость тура входят: трансфер из Еревана и обратно, профессиональный гид-историк, посещение собора и Музея-сокровищницы, входные билеты и страховка. Питание оплачивается отдельно.",
+        "Вход на территорию монастырского комплекса свободный. Музей-сокровищница — платный (около 1500 драм). Доехать можно на маршрутке №106 от площади Адмирала Исакова за 300 драм или на такси около 20 минут.",
     },
   ]
 
@@ -64,9 +64,6 @@ const Etchmiadzin = () => {
             <span className="font-medium">Армения Тур</span>
           </div>
 
-          <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Забронировать</Button>
-          </div>
         </nav>
 
         {/* Hero Content */}
@@ -83,14 +80,14 @@ const Etchmiadzin = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Забронировать экскурсию
+              Читать гид
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg"
             >
-              Смотреть маршрут
+              Как добраться
             </Button>
           </div>
 
@@ -125,8 +122,8 @@ const Etchmiadzin = () => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Icon name="Wallet" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Все включено</h3>
-              <p className="text-white/80 leading-relaxed">Трансфер, гид, входные билеты и посещение сокровищницы.</p>
+              <h3 className="text-xl font-semibold mb-4">Вход свободный</h3>
+              <p className="text-white/80 leading-relaxed">Территория монастыря открыта для посетителей бесплатно. Платный только музей-сокровищница.</p>
             </div>
 
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
@@ -155,9 +152,9 @@ const Etchmiadzin = () => {
               <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-white/60 mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4">Трансфер</h3>
+                  <h3 className="text-xl font-semibold mb-4">Маршрутка или такси</h3>
                   <p className="text-white/80 leading-relaxed text-sm">
-                    Комфортный трансфер из Еревана с гидом-историком. Узнаете историю места ещё в пути.
+                    Маршрутка №106 от площади Адмирала Исакова — 300 драм, 30 минут. Такси — около 2500–3000 драм.
                   </p>
                 </div>
               </div>
@@ -195,7 +192,7 @@ const Etchmiadzin = () => {
 
             <div className="text-center">
               <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold">
-                Забронировать экскурсию
+                Открыть на карте
               </Button>
             </div>
           </div>
@@ -268,7 +265,7 @@ const Etchmiadzin = () => {
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2">Сообщение</label>
-                    <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваши вопросы об экскурсии в Эчмиадзин..." />
+                    <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none" placeholder="Ваши вопросы о посещении Эчмиадзина или ваш опыт..." />
                   </div>
                   <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">
                     Отправить сообщение
@@ -279,7 +276,7 @@ const Etchmiadzin = () => {
               <div className="space-y-8">
                 <div>
                   <p className="text-xl text-white/90 leading-relaxed text-pretty">
-                    По вопросам экскурсий в Эчмиадзин, групповых туров или индивидуальных программ — свяжитесь с нами. Отвечаем в течение одного рабочего дня.
+                    Есть вопрос о месте или хотите поделиться своим опытом посещения? Напишите нам — ответим.
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
